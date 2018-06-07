@@ -10,7 +10,7 @@ def least_coins(cents)
   numquarter = cents/25
     if numquarter == 0
       coinhash[:quarter] = numquarter
-        puts 'quarter => #{numquarter}'
+        puts "quarter => #{numquarter}"
     elsif
       cents = cents - (numquarter*25)
     end
