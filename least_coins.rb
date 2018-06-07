@@ -12,27 +12,27 @@ def least_coins(cents)
       coinhash[:quarter] = numquarter
         puts 'quarter => #{numquarter}'
     elsif
-      cents = cents - (quarter*25)
+      cents = cents - (numquarter*25)
     end
   numdime = cents/10
     if numdime == 0
       coinhash[:dime] = numdime
         puts 'dime => #{numdime}'
     elsif
-      cents = cents - (dime*10)
+      cents = cents - (numdime*10)
     end
   numnickel = cents/5
     if numnickel == 0
       coinhash[:nickel] = numnickel
     elsif
-      cents = cents - (nickel*5)
+      cents = cents - (numnickel*5)
         puts 'nickel => #{numnickel}'
     end
   numpenny = cents/1
     if numpenny == 0
       coinhash[:penny] = numpenny
     elsif
-      cents = cents - (penny*1)
+      cents = cents - (numpenny*1)
         puts 'penny => #{numpenny}'
     end
 end
